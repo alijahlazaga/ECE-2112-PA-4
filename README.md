@@ -32,8 +32,6 @@ VisComm
 len(VisComm)
 ```
 
-
-
 # **B. Visayas Female DataFrame**
 
 **Create a VisFemale DataFrame containing Visayas female students with their Name, Track, GEAS, Electronics, and Average.**
@@ -116,14 +114,17 @@ plt.ylabel('Average')
 plt.ylim(0, 100)
 ```
 
-**d. 
+**d. Write three concise statements identifying the category with the highest sample
+mean for each feature.**
 
-
+• Communication students obtained the highest sample mean of 67.975 in the track category.
+• Male students obtained the highest sample mean of 67.183 in the Gender category yet the difference between Female students mean is low.
+• Students from Luzon obtained the highest sample mean of 68.083 in the Hometown category while Mindanao is placed before Luzon and Visayas obtained the lowest sample mean compared to the other 2 hometowns.
 
 Thank you for reading!!!
 
 To fully see the main python program, please visit the link provided below:
-
+https://github.com/alijahlazaga/ECE-2112-PA-4/blob/3806047470315ba20476ab79191f064d39a933aa/ProgrammingAssignment4.ipynb
 
 ### **README file Version History:**
 
