@@ -118,7 +118,9 @@ plt.ylim(0, 100)
 mean for each feature.**
 
 • Communication students obtained the highest sample mean of 67.975 in the track category.
+
 • Male students obtained the highest sample mean of 67.183 in the Gender category yet the difference between Female students mean is low.
+
 • Students from Luzon obtained the highest sample mean of 68.083 in the Hometown category while Mindanao is placed before Luzon and Visayas obtained the lowest sample mean compared to the other 2 hometowns.
 
 Thank you for reading!!!
