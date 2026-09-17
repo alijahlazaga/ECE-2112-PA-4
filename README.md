@@ -2,7 +2,7 @@
 
 **Made by: Alijah B. Lazaga | 2ECE-B**
 
-The content of this repository contains Experiment  4 for "Data Wrangling and Visualization" this S.Y. 2026-2027.
+The content of this repository contains Experiment 4 for "Advanced Computer Programming" this S.Y. 2026-2027.
 
 Note: Before coding, put ⁠`import pandas as pd⁠` and ⁠`import matplotlib.pyplot as plt`⁠ in order to import the PANDAS and MATPLOTLIB libraries and rename them to ⁠pd⁠ and ⁠plt⁠. This way, ⁠pd⁠ and ⁠plt⁠ will act as acronyms, shortening them so that we don't have to code the full library names before every function. We also have to import a .xlsx file that was uploaded in canvas by your professor using `⁠pd.read_xlsx('board2.xlsx')⁠` and name it ⁠df⁠. Since the dataset lacks an ⁠Average⁠ column, we compute it using `⁠df['Average'] = (df['Math'] + df['GEAS'] + df['Electronics'] + df['Communications']) / 4⁠`.
 
