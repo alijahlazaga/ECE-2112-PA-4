@@ -22,6 +22,16 @@ The following function was used:
 
 By combining all of the functions shown above, the final code for this problem is as follows:
 
+```python
+import pandas as pd
+
+df = pd.read_csv('board2015.csv')
+df['Average'] = (df['Math'] + df['GEAS'] + df['Electronics']) / 3
+
+VisComm = df.loc[(df['Hometown'] == 'Visayas') & (df['Track'] == 'Communication'), ['Name', 'Gender', 'Math', 'Electronics', 'Average']]
+VisComm
+
+len(VisComm)
 
 
 
@@ -40,6 +50,10 @@ The following method was used:
  
 By combining all of the code shown above, the final code for this problem is as follows:
 
+VisFemale = df.loc[(df['Hometown'] == 'Visayas') & (df['Gender'] == 'Female'), ['Name', 'Track', 'GEAS', 'Electronics', 'Average']]
+VisFemale
+
+VisFemale[VisFemale['Average'] >= 60]
 
 
 # **C. Category-Average Visualization**
@@ -64,6 +78,38 @@ The following functions were used:
 
 By combining all of the code shown above, the final code for this problem is as follows:
 
+import matplotlib.pyplot as plt
+
+track_mean = df.groupby('Track')['Average'].mean()
+gender_mean = df.groupby('Gender')['Average'].mean()
+hometown_mean = df.groupby('Hometown')['Average'].mean()
+
+track_mean
+gender_mean
+hometown_mean
+
+plt.subplot(1, 3, 1)
+plt.bar(track_mean.index, track_mean.values)
+plt.title('Mean Average by Track')
+plt.xlabel('Track')
+plt.ylabel('Average')
+plt.ylim(0, 100)
+
+plt.subplot(1, 3, 2)
+plt.bar(gender_mean.index, gender_mean.values)
+plt.title('Mean Average by Gender')
+plt.xlabel('Gender')
+plt.ylabel('Average')
+plt.ylim(0, 100)
+
+plt.subplot(1, 3, 3)
+plt.bar(hometown_mean.index, hometown_mean.values)
+plt.title('Mean Average by Hometown')
+plt.xlabel('Hometown')
+plt.ylabel('Average')
+plt.ylim(0, 100)
+
+plt.tight_layout()
 
 **d. 
 Thank you for reading!!!
